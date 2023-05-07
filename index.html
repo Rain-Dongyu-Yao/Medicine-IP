@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>访问网站背后的秘密</title>
-	<style>
-		body {
-			margin: 0;
-			padding: 0;
-			background-image: url(background.png);
-			background-size: cover;
-			background-position: center;
-			font-family: Arial, sans-serif;
-		}
-		.container {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			height: 85vh;
-		}
-        video {
-            display: block;
-            margin: 50px auto 0;
+    <title>本草IP主页跳转链接</title>
+    <style>
+        body {
+            margin-top: 100px;
+            padding: 0;
+            background-image: url(background.png);
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
         }
-		h1 {
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 85vh;
+        }
+        h1 {
             font-size: 48px;
             color: white;
             text-align: center;
@@ -30,21 +26,21 @@
             margin-top: 0;
             margin-bottom: 0;
         }
-		p {
-			font-size: 20px;
-			font-weight: bold;
-			text-align: center;
-			color: white;
-			margin-top: 5px;
-			margin-bottom: 0px;
-		}
-		.credit {
-			font-size: 16px;
-			font-weight: normal;
-			text-align: center;
-			color: white;
-			margin-top: 5px;
-		}
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            margin-top: 5px;
+            margin-bottom: 0px;
+        }
+        .credit {
+            font-size: 16px;
+            font-weight: normal;
+            text-align: center;
+            color: white;
+            margin-top: 5px;
+        }
         /* 导航栏样式 */
         .navbar {
             display: flex;
@@ -66,27 +62,26 @@
         .nav-link:hover {
             background-color: #555;
         }
-	</style>
+        /* 修改的部分 */
+        .transparent-block {
+            background-color: rgba(0,0,0,0.33);
+            padding: 50px;
+            border-radius: 10px;
+            margin-top: 320px;
+            text-align: center;
+        }
+        .transparent-block a {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <!-- 导航栏 -->
-    <div class="navbar">
-        <a href="index.html" class="nav-link">课程内容</a>
-        <a href="exercises.html" class="nav-link">课后习题</a>
-        <a href="learning.html" class="nav-link">学习园地</a>
+    <div class="container">
+        <!-- 修改的部分 -->
+        <div class="transparent-block">
+            <h1><a href="https://rain-ydy.github.io/">本草IP主页链接</a></h1>
+        </div>
     </div>
-	<div class="container">
-		<h1>访问网站背后的秘密</h1>
-		<div style="display:flex; flex-direction:column; justify-content:center; align-items:center; margin-top:20px;">
-			<video width="75%" controls autoplay>
-				<source src="video_file.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-		<p style="margin-top:5px;">计设2023数媒静态设计 -- 队员：</p>
-		<div class="credit">
-			Photo by Rain James Y
-		</div>
-	</div>
 </body>
 </html>
